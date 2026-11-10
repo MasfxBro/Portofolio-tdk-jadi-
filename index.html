@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Maliq's portfolio — a software engineering student learning by building for the web."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Maliq's Journey — Software Engineering Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Inter:wght@200;300;400&family=Poppins:wght@200;300;400;500;600;700&family=Pragati+Narrow:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Maliq's Journey, home">
+        <svg class="brand-mark" viewBox="0 0 44 44" aria-hidden="true">
+          <path d="M3 40V4l19 14L41 4v36h-8V20L22 28 11 20v20H3Z" />
+        </svg>
+        <span class="brand-name">
+          <span>Maliq's</span>
+          <span>Journey</span>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a class="nav-link is-active" href="#home" aria-current="page">Home</a>
+        <a class="nav-link" href="#about">About Me</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#contact">Contact Me</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <span class="decoration decoration-top" aria-hidden="true"></span>
+        <span class="decoration decoration-bottom" aria-hidden="true"></span>
+
+        <div class="hero-copy">
+          <p class="eyebrow">A little introduction</p>
+          <h1 id="hero-title">Hi, I'm <span class="script-name">Maliq</span></h1>
+          <p class="hero-subtitle">Software Engineering Student.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              <span>View my projects</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg>
+            </a>
+            <a class="text-link about-link" href="#about">
+              <span>About Myself</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-card">
+            <div class="browser-bar" aria-hidden="true">
+              <span class="browser-dot dot-red"></span>
+              <span class="browser-dot dot-yellow"></span>
+              <span class="browser-dot dot-green"></span>
+            </div>
+            <img
+              class="portrait"
+              src="assets/maliq-portrait.jpg"
+              alt="Maliq smiling in front of tropical plants"
+              width="900"
+              height="1350"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#about">
+          <span>Scroll to explore</span>
+          <span class="scroll-line" aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="about-layout">
+          <div class="about-photo-card" data-reveal>
+            <div class="browser-bar" aria-hidden="true">
+              <span class="browser-dot dot-red"></span>
+              <span class="browser-dot dot-yellow"></span>
+              <span class="browser-dot dot-green"></span>
+            </div>
+            <img
+              class="about-photo"
+              src="assets/maliq-childhood.jpg"
+              alt="Maliq sitting at a restaurant as a child"
+              width="1200"
+              height="1600"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="about-copy">
+            <p class="about-eyebrow" data-reveal>01 — A little stories about me</p>
+            <div class="about-intro" data-reveal>
+              <h2 class="about-greeting" id="about-title">Hello, my name is Maliq.</h2>
+              <p class="about-description">
+                I am a Software Engineering student with a strong interest in technology and new
+                ideas. To me, Software Engineering is more than a field of study. It is a stepping
+                stone toward understanding how technology develops and how an idea can become
+                something real. My curiosity drives me to keep experimenting, learn from my mistakes,
+                and follow the changes happening in the technology world.
+              </p>
+            </div>
+            <p class="about-followup" data-reveal>
+              This website is a record of my learning journey. Here I collect the projects I have
+              built, and it will keep growing over time.
+            </p>
+            <a class="stories-button" href="stories.html" data-reveal>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 4.5h10.5A3.5 3.5 0 0 1 19 8v12H8.5A3.5 3.5 0 0 1 5 16.5v-12Z" />
+                <path d="M5 16.5A3.5 3.5 0 0 1 8.5 13H19M9 8h6" />
+              </svg>
+              <span>Read my stories</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="coming-section section-tint" id="projects" aria-labelledby="projects-title">
+        <div class="section-inner">
+          <p class="section-kicker">02 / Projects</p>
+          <h2 id="projects-title">Things I've been building.</h2>
+          <p class="section-note">Projects will be featured here soon.</p>
+        </div>
+      </section>
+
+      <section class="coming-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-inner">
+          <p class="section-kicker">03 / Skills</p>
+          <h2 id="skills-title">Tools I'm learning.</h2>
+          <p class="section-note">Skills and tools will be added here soon.</p>
+        </div>
+      </section>
+
+      <section class="coming-section section-tint" id="contact" aria-labelledby="contact-title">
+        <div class="section-inner">
+          <p class="section-kicker">04 / Contact</p>
+          <h2 id="contact-title">Let's connect.</h2>
+          <p class="section-note">Contact details will be added here soon.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#home">Maliq's Journey</a>
+      <span>Made with curiosity.</span>
+    </footer>
+  </body>
+</html>
